@@ -4,10 +4,12 @@
 
 ## 저장소 가져오기
 
+개별 스킬을 설치하거나 여러 요청으로 나눌 필요는 없다. [README의 첫 요청문](../README.md#가져와서-사용하기)을 제공된 Codex에 한 번 전달하면 저장소 전체를 가져오고 [START.md](../START.md)에 따라 필요한 스킬을 읽도록 요청할 수 있다. 아래는 명령을 직접 실행할 때의 절차다.
+
 제공된 Codex에게 실제 과제의 작업 폴더와 지침을 먼저 확인하게 한다. 공개 GitHub 접근이 허용됐다면 해당 폴더에서 아래 명령을 실행하게 한다. 직접 터미널을 쓸 수 있는 환경에서는 같은 명령을 직접 실행할 수 있다.
 
 ```sh
-git clone https://github.com/Ash-Minjae/task-workbench.git .prep/task-workbench
+git clone https://github.com/Love-Ash/task-workbench.git .prep/task-workbench
 git -C .prep/task-workbench rev-parse HEAD
 ```
 

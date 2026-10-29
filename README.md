@@ -4,14 +4,24 @@
 
 ## 가져와서 사용하기
 
-제공된 작업 환경에서 실제 과제 폴더를 확인한 뒤 그 위치에서 실행한다. 아래 대상 폴더가 이미 있으면 다른 빈 경로를 정한다.
+AI와 공개 자료 사용이 허용된 작업 단계에서, 제공된 Codex에 아래 요청을 한 번 전달한다. 저장소 전체를 가져온 뒤 시작 문서가 필요한 스킬을 안내하므로 개별 스킬 설치는 필요하지 않다.
+
+```text
+현재 과제의 작업 폴더와 기존 지침을 먼저 확인해 주세요.
+https://github.com/Love-Ash/task-workbench.git 를
+그 과제 폴더의 .prep/task-workbench에 clone해 주세요.
+대상 폴더가 이미 있으면 덮어쓰거나 삭제하지 말고 다른 빈 경로를 쓰세요.
+가져온 저장소의 START.md를 읽고 실제 과제에 맞는 스킬을 적용해 진행해 주세요.
+```
+
+직접 명령을 실행한다면 실제 과제 폴더에서 아래 한 줄로 모든 스킬과 도구를 함께 가져온다.
 
 ```sh
-git clone https://github.com/Ash-Minjae/task-workbench.git .prep/task-workbench
+git clone https://github.com/Love-Ash/task-workbench.git .prep/task-workbench
 git -C .prep/task-workbench rev-parse HEAD
 ```
 
-이 주소는 이 프로젝트의 배포 대상이다. 아직 공개되지 않았거나 접근이 허용되지 않는 환경에서는 clone이 실패한다. 개인 계정으로 로그인하거나 개인 파일을 올려 우회하지 않는다.
+공개 GitHub 접근이 허용되지 않는 환경에서는 clone이 실패한다. 개인 계정으로 로그인하거나 개인 파일을 올려 우회하지 않는다.
 
 가져온 뒤 Codex에 [시작 요청문](docs/start.md#첫-요청문)을 전달한다. 실제 과제 지침을 확인하고 필요한 SKILL.md를 경로로 읽게 하는 방식이다. 실제 과제 폴더를 작업 위치로 유지하고, 기존 프로젝트의 지침과 전역 설정은 바꾸지 않는다.
 
